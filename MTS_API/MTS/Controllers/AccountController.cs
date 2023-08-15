@@ -31,6 +31,11 @@ namespace MTS.Controllers
             _tokenService = tokenService;
         }
 
+        /// <summary>
+        /// Registration endpoint
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegistrationRequestModel model)
