@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MTS.CommonLibrary\MTS.CommonLibrary.csproj" />
+    <ProjectReference Include="..\MTS.RepositoryInterface\MTS.RepositoryInterface.csproj" />
+    <ProjectReference Include="..\MTS.Repository\MTS.Repository.csproj" />
+    <ProjectReference Include="..\MTS.ServiceInterface\MTS.ServiceInterface.csproj" />
+  </ItemGroup>
+
+</Project>
